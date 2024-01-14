@@ -310,6 +310,7 @@ const run = async () => {
 
       for (const chunk of chunks) {
         const summary = await askGPT4(chunk, 'Please create a shorter version of this text (which is a section of a video transcript) in bullet point form. Make sure to mention key terms and details that might be relevant for searchability.');
+        console.log(summary);
         summarizedChunks.push(summary);
       }
     }
